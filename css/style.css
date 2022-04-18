@@ -318,11 +318,11 @@ svg g path {
 	background-image: linear-gradient(to top, rgba(0, 1, 80, 0.08), transparent);
 	border-top: 2px solid #bb8822; 
 }
-.smallPyramid-5-partd4-shadow {
-	position: absolute; bottom: 44%; left: 33.6%; 
-    width: 9.8%;
-    height: 4%;
-    clip-path: polygon(0% 100%, 20.5% 0%, 41% 0%, 35% 100%);
+.smallPyramid-5-part4-shadow {
+	position: absolute; bottom: 44%; left: 36.3%; 
+    width: 3%;
+    height: 1.8%;
+    clip-path: polygon(0% 100%, 29.5% 0%, 41% 0%, 35% 100%);
     background-color:#885500;
 	border-top: 2px solid #bb8822; 
 }
