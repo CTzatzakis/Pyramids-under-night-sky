@@ -1,5 +1,5 @@
 # Pyramids-under-night-sky
-Pyramids of Gyza scene - CSS HTML
+Pyramids of Giza scene - CSS HTML
 
 ## Scene Preview
 Scenery      |      Live Preview      |
