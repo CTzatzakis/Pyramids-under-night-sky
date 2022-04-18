@@ -1,0 +1,353 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html,body{ 
+  width:100vm;
+  height:calc(100vw - 8rem);
+  padding: 0;
+  margin:  0;
+}
+
+body {  
+  margin: 0;
+  padding: 4rem; /*Create a paspartu frame effect*/
+  background-color: #fff;
+  background-image: linear-gradient(to center, rgba(0, 1, 85, 0.5), transparent);  
+}
+
+/*=======================Clouds========================*/
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@keyframes clouds-loop-1 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+.clouds-1 {
+  background-image: url(../resources/img/media/clouds_2.png);
+  animation: clouds-loop-1 20s infinite linear;
+}
+
+@keyframes clouds-loop-2 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+.clouds-2 {
+  background-image: url(../resources/img/media/clouds_1.png);
+  animation: clouds-loop-2 15s infinite linear;
+}
+
+@keyframes clouds-loop-3 {
+  to {
+    background-position: -1579px 0;
+  }
+}
+.clouds-3 {
+  background-image: url(../resources/img/media/clouds_3.png);
+  animation: clouds-loop-3 17s infinite linear;
+}
+
+
+body a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+  text-align: right;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 0;
+  color: #b8956b;
+  text-shadow: 0 -1px 0 rgba(250, 248, 245, 0.6), 0 2px 3px #000;
+}
+body a span {
+  display: block;
+}
+/*===============================================*/
+
+svg#stars-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;  
+
+}
+svg g path {
+  stroke-width: 1px;
+  stroke: #fff;
+}
+
+.sky{
+  height:90%;
+  width:100%;
+  position: absolute;
+  top: 0;
+}
+
+.sands {
+	position: absolute; top: 60%; left: 0%; 
+	height: 40%;
+	width: 100%;
+	background-color:#ffcc66; 
+	background-image: linear-gradient(to bottom, rgba(0, 1, 80, 0.2), transparent);	
+}
+
+.sands-wave-base {
+	position: absolute; bottom: 0%; right: 0%;
+	display: block;
+    width: 100%;
+    height: 5%;
+    background-color: #ffcc66;
+    border-radius: 100% 25% 50% 20% / 100% 100% 0% 0%;
+}
+.sands-wave {
+	position: absolute; bottom: -5%; right: 10%;
+	display: block;
+    width: 60%;
+    height: 15%;
+    background-color: #ffcc66;
+    border-radius: 100% 55% 00% 0% / 100% 100% 0% 0%;
+}
+
+/*================================================*/
+
+.clouds {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.clouds-1,
+.clouds-2,
+.clouds-3 {
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50%;
+}
+
+/*=================================================*/
+
+.scene {
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	background-color: #000;
+	background-image: linear-gradient(to top, rgba(0, 0, 102, 0.5), transparent);
+	position: relative;
+}
+
+.GreatPyramid-1 {
+    position: absolute; bottom: 35%; left: 15%; 
+    width: 55%;
+    height: 32%;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+    background-color:#cc8800;
+    background-image: linear-gradient(to top, rgba(0, 1, 80, 0.05), transparent);
+	/*background: linear-gradient(to bottom, white 20%, #088A85 30% 70%);Snow Effect*/
+}
+.GreatPyramid-1-shadow {
+    position: absolute; bottom: 35%; left: 15%; 
+    width: 55%;
+    height: 32%;
+    clip-path: polygon(0% 100%, 25% 100%, 50% 0%);
+    background-color:#885500;
+}
+.GreatPyramid-2 {
+	position: absolute; bottom: 37%; left: 25%; 
+    width: 60%;
+    height: 35%;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+
+    background-image: linear-gradient(to top, rgba(0, 1, 80, 0.2), transparent);
+}
+.GreatPyramid-2-topfront {
+	position: absolute; bottom: 37%; left: 25%; 
+    width: 60%;
+    height: 35%;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+	background: linear-gradient(to bottom, #ffdd99 20%, #eebf60 30% 70%);/*Pyramid TopEffect*/
+}
+.GreatPyramid-2-shadow {
+    position: absolute; bottom: 37%; left: 25%; 
+    width: 60%;
+    height: 35%;
+    clip-path: polygon(0% 100%, 29% 100%, 50% 0%);
+    background-color:#885500;
+    background: linear-gradient(to bottom, #aa8844 20%, #885500 30% 70%);
+}
+.GreatPyramid-3 {
+	position: absolute; bottom: 39%; left: 50%; 
+    width: 45%;
+    height: 20%;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+    background-color:#ebb543;
+    background-image: linear-gradient(to top, rgba(0, 1, 80, 0.05), transparent);
+}
+.GreatPyramid-3-shadow {
+    position: absolute; bottom: 39%; left: 50%; 
+    width: 45%;
+    height: 20%;
+    clip-path: polygon(0% 100%, 35% 100%, 50% 0%);
+    background-color:#885500;
+}
+.smallPyramid-4 {
+	position: absolute; bottom: 32%; left: 0%; 
+    width: 27%;
+    height: 4.5%;
+    clip-path: polygon(0% 100%, 14.5% 0%, 85.5% 0%, 100% 100%);
+    background-color:#cc8800;
+	background-image: linear-gradient(to top, rgba(0, 1, 80, 0.08), transparent);
+	border-top: 2px solid #bb8822;
+}
+.smallPyramid-4-shadow {
+    position: absolute; bottom: 32%; left: 0%; 
+    width: 27%;
+    height: 4.5%;
+    background-color:#885500;
+	clip-path: polygon(0% 100%, 14.5% 0%, 40% 0%, 35% 100%);
+	border-top: 2px solid #bb8822;
+}
+.smallPyramid-4-part2 {
+	position: absolute; bottom: 36%; left: 4.5%; 
+    width: 18%;
+    height: 5%;
+    clip-path: polygon(0% 100%, 19.5% 0%, 80.5% 0%, 100% 100%);
+    background-color:#cc8800;
+	background-image: linear-gradient(to top, rgba(0, 1, 80, 0.08), transparent);
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-4-part2-shadow {
+	position: absolute; bottom: 36%; left: 4.5%; 
+    width: 18%;
+    height: 5%;
+    clip-path: polygon(0% 100%, 19.5% 0%, 41% 0%, 35% 100%);
+    background-color:#885500;
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-4-part3 {
+	position: absolute; bottom: 40%; left: 8.5%; 
+    width: 9.9%;
+    height: 4.5%;
+    clip-path: polygon(0% 100%, 28.5% 0%, 79.5% 0%, 100% 100%);
+    background-color:#cc8800;
+	background-image: linear-gradient(to top, rgba(0, 1, 80, 0.08), transparent);
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-4-part3-shadow {
+	position: absolute; bottom: 40%; left: 8.5%; 
+    width: 9.9%;
+    height: 4.5%;
+    clip-path: polygon(0% 100%, 28.5% 0%, 41% 0%, 35% 100%);
+    background-color:#885500;
+	border-top: 2px solid #bb8822; 
+}
+
+
+.smallPyramid-5 {
+	position: absolute; bottom: 32%; left: 25%; 
+    width: 27%;
+    height: 4.5%;
+    clip-path: polygon(0% 100%, 14.5% 0%, 85.5% 0%, 100% 100%);
+    background-color:#cc8800;
+	background-image: linear-gradient(to top, rgba(0, 1, 80, 0.08), transparent);
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-5-shadow {
+    position: absolute; bottom: 32%; left: 25%; 
+    width: 27%;
+    height: 4.5%;
+    background-color:#885500;
+	clip-path: polygon(0% 100%, 14.5% 0%, 40% 0%, 35% 100%);
+	border-top: 2px solid #bb8822;
+}
+.smallPyramid-5-part2 {
+	position: absolute; bottom: 36%; left: 29.5%; 
+    width: 18%;
+    height: 5%;
+    clip-path: polygon(0% 100%, 19.5% 0%, 80.5% 0%, 100% 100%);
+    background-color:#cc8800;
+	background-image: linear-gradient(to top, rgba(0, 1, 80, 0.08), transparent);
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-5-part2-shadow {
+	position: absolute; bottom: 36%; left: 29.5%; 
+    width: 18%;
+    height: 5%;
+    clip-path: polygon(0% 100%, 19.5% 0%, 41% 0%, 35% 100%);
+    background-color:#885500;
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-5-part3 {
+	position: absolute; bottom: 40%; left: 33.5%; 
+    width: 9.9%;
+    height: 4.5%;
+    clip-path: polygon(0% 100%, 28.5% 0%, 79.5% 0%, 100% 100%);
+    background-color:#cc8800;
+	background-image: linear-gradient(to top, rgba(0, 1, 80, 0.08), transparent);
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-5-part3-shadow {
+	position: absolute; bottom: 40%; left: 33.5%; 
+    width: 9.9%;
+    height: 4.5%;
+    clip-path: polygon(0% 100%, 28.5% 0%, 41% 0%, 35% 100%);
+    background-color:#885500;
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-5-part4 {
+	position: absolute; bottom: 44%; left: 36.3%; 
+    width: 4.4%;
+    height: 2%;
+    clip-path: polygon(0% 100%, 29.5% 0%, 70.5% 0%, 100% 100%);
+    background-color:#cc8800;
+	background-image: linear-gradient(to top, rgba(0, 1, 80, 0.08), transparent);
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-5-partd4-shadow {
+	position: absolute; bottom: 44%; left: 33.6%; 
+    width: 9.8%;
+    height: 4%;
+    clip-path: polygon(0% 100%, 20.5% 0%, 41% 0%, 35% 100%);
+    background-color:#885500;
+	border-top: 2px solid #bb8822; 
+}
+.smallPyramid-6 {
+	position: absolute; bottom: 32%; left: 51%; 
+    width: 27%;
+    height: 15%;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+    background-color:#cc8800;
+	background-image: linear-gradient(to top, rgba(0, 1, 80, 0.14), transparent);
+}
+.smallPyramid-6-shadow {
+    position: absolute; bottom: 32%; left: 51%; 
+    width: 27%;
+    height: 15%;
+    clip-path: polygon(0% 100%, 35% 100%, 50% 0%);
+    background-color:#885500;
+}
+.moon {
+	 position: absolute;
+     top: 10%;
+     right: 5%;
+     transform: translate(-50%, -50%);
+     height: 50px;
+     width: 50px;
+     box-shadow: -10px 10px 1px 2px white  ;
+     border-radius: 50%;
+}
